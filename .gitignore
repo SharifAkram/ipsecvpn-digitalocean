@@ -1,8 +1,8 @@
 # Ignore certificate files
-*.p12
+vpnclient.p12
 
-# Ignore Windows batch scripts if they contain sensitive automation
-*.cmd
+# Ignore Windows batch scripts
+ikev2_config_import.cmd
 
 # Ignore common system and editor files
 .DS_Store
