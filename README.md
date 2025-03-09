@@ -29,7 +29,6 @@ Provides scripts to automate DigitalOcean resource management using doctl
 2. SSH into the Droplet
    - ssh root@ -------
 3. Install IPSec VPN Server
-   - 
 4. Transfer the .p12 File to Your Client Device
    - scp root@ --------
 5. Configure VPN on Windows
