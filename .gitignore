@@ -1,2 +1,12 @@
-.p12
-.cmd
+# Ignore certificate files
+*.p12
+
+# Ignore Windows batch scripts if they contain sensitive automation
+*.cmd
+
+# Ignore common system and editor files
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+.env
