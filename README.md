@@ -1,18 +1,18 @@
-IPSec VPN on DigitalOcean
+# IPSec VPN on DigitalOcean
 
 This repository provides scripts and instructions
 to set up an IPSec VPN on a DigitalOcean Droplet.
 The VPN allows point-to-site connections,
 enabling secure access to remote resources.
 
-Features:
+## Features:
 
 Automates VPN server setup on a DigitalOcean Droplet
 Generates a .p12 certificate file for secure client authentication
 Allows connection from a Windows client
 Provides scripts to automate DigitalOcean resource management using doctl
 
-Requirements:
+## Requirements:
 
 - A DigitalOcean account
 - A new Droplet (Ubuntu recommended)
@@ -20,7 +20,7 @@ Requirements:
 - A Windows client to connect to the VPN
 - doctl installed for DigitalOcean API automation
 
-Setup Instructions:
+## Setup Instructions:
 
 1. Create a DigitalOcean Droplet
    a. Sign up or log in to DigitalOcean.
