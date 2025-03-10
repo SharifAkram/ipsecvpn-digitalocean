@@ -7,7 +7,7 @@ enabling secure access to remote resources.
 
 ## Features:
 
-* Automates VPN server setup on a DigitalOcean Droplet.
+* VPN server setup on a DigitalOcean Droplet.
 * Generates a .p12 certificate file for secure client authentication.
 * Allows connection from a Windows client.
 * Provides scripts to automate DigitalOcean resource management using doctl.
