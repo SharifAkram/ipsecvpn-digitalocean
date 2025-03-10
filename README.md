@@ -1,4 +1,4 @@
-# IPSec VPN on DigitalOcean
+# IPsec VPN Server on DigitalOcean VPS
 
 This repository provides scripts and instructions
 to set up an IPSec VPN on a DigitalOcean Droplet.
