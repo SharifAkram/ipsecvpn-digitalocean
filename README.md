@@ -1,4 +1,4 @@
-# Point to Site IPsec VPN on DigitalOcean
+# Point to Site IPsec VPN server on Digital Ocean Droplet
 
 This repository provides scripts and instructions
 to set up an IPsec VPN on a DigitalOcean Droplet.
