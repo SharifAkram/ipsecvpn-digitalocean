@@ -1,7 +1,7 @@
 # Point to Site IPsec VPN on DigitalOcean
 
 This repository provides scripts and instructions
-to set up an IPSec VPN on a DigitalOcean Droplet.
+to set up an IPsec VPN on a DigitalOcean Droplet.
 The VPN allows point to site connections,
 enabling secure access to remote resources.
 
