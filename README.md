@@ -57,7 +57,7 @@ From the book "Set Up Your Own IPsec VPN, OpenVPN, and Wireguard Server (Build Y
    - Verify status:
      - > doctl compute droplet get <DROPLET_ID>
    - Check account balance:
-     - > doctl billing balance get
+     - > doctl balance get
 10. Verification
     - Use an IP address checker before and after connecting.
     - Your IP address should match the Droplet’s public IP after connecting.
