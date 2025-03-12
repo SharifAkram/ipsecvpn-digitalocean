@@ -32,32 +32,55 @@ From the book "Set Up Your Own IPsec VPN, OpenVPN, and Wireguard Server (Build Y
    - Create a password.
    - Enter a hostname then select create Droplet.
 2. Open a terminal
-   - ssh username@server-ip
+   ```bash
+   ssh username@server-ip
+   ```
 3. Install IPxec VPN Server, have the script generate random VPN credentials for you.
-   - > wget https://get.vpnsetup.net -O vpn.sh && sudo sh vpn.sh
+   ```bash
+   wget https://get.vpnsetup.net -O vpn.sh && sudo sh vpn.sh
+   ```
 4. Update Libreswan on VPN server
-   - Check installed verson: ipsec --version
-   - > wget https://get.vpnsetup.net/upg -O vpnup.sh && sudo sh vpnup.sh
+   - Check installed verson:
+   ```bash
+   ipsec --version
+   ```
+   ```bash
+   wget https://get.vpnsetup.net/upg -O vpnup.sh && sudo sh vpnup.sh
+   ```
 5. Transfer the .p12 File to your Windows laptop
-   - scp username@server-ip:/path/to/vpnclient.p12 /local/destination/
+   ```bash
+   scp username@server-ip:/path/to/vpnclient.p12 /local/destination/
+   ```
 6. Download ikev2_config_import.cmd and save in same folder as .p12 file
-   - > https://github.com/hwdsl2/vpn-extras/releases/latest/download/ikev2_config_import.cmd
+   ```bash
+   https://github.com/hwdsl2/vpn-extras/releases/latest/download/ikev2_config_import.cmd
+   ```
 7. Right click the saved script, select Properties. Click Unblock at the bottom, then click "OK"
 8. Right click the script and select "Run as administrator" and follow prompts
 9. Install and Configure doctl for DigitalOcean API
    - Initialize:
-     - > doctl auth init
+     ```powershell
+     doctl auth init
+     ```
    - Login into Digital Ocean. Navigate to API. Click generate "New Token."
      Give it a name and enable permissions. Copy the token and paste it when prompted.
    - Check resources:
-     - > doctl compute droplet list
+     ```powershell
+     doctl compute droplet list
+     ```
    - Power On/Off:
-     - > doctl compute droplet-action power-on <DROPLET_ID>
-     - > doctl compute droplet-action power-off <DROPLET_ID>
+     ```powershell
+     doctl compute droplet-action power-on <DROPLET_ID>
+     doctl compute droplet-action power-off <DROPLET_ID>
+     ```
    - Verify status:
-     - > doctl compute droplet get <DROPLET_ID>
+     ```powershell
+     doctl compute droplet get <DROPLET_ID>
+     ```
    - Check account balance:
-     - > doctl balance get
+     ```powershell
+     doctl balance get
+     ```
 10. Verification
     - Use an IP address checker before and after connecting.
     - Your IP address should match the Droplet’s public IP after connecting.
